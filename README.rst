@@ -1,3 +1,7 @@
+.. image:: https://readthedocs.org/projects/stakeholders-docker/badge/?version=latest
+   :target: https://stakeholders-docker.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
 Introduction
 ============
 
