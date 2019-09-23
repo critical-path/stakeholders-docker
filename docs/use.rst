@@ -1,37 +1,3 @@
-Introduction
-============
-
-Stakeholder management is critical to project management.  Inspired by the Project Management Body of Knowledge, this app helps project teams to perform the principal tasks associated with managing stakeholders.
-
-
-Installing stakeholders-docker
-==============================
-
-stakeholders-docker is available on GitHub at https://github.com/critical-path/stakeholders.  It is the Docker version of `stakeholders <https://github.com/critical-path/stakeholders>`__.
-
-To install it, run the following command from your shell.
-
-.. code-block:: console
-
-   [user@host ~]$ git clone git@github.com:critical-path/stakeholders-docker.git
-
-
-Starting stakeholders-docker
-============================
-
-To start stakeholders-docker for the first time, run the following command from your shell.  This will build a Docker container from scratch.
-
-.. code-block:: console
-
-   [user@host stakeholders-docker]$ docker-compose up --build
-
-To restart it later, run the following command from your shell.  This will preserve your progress.
-
-.. code-block:: console
-
-   [user@host stakeholders-docker]$ docker-compose up
-
-
 Using stakeholders-docker
 =========================
 
@@ -119,19 +85,3 @@ Make updates
 In the navbar, select either :code:`stakeholders`, :code:`deliverables`, or :code:`associations` and then :code:`show/update/delete`.
 
 Find a stakeholder, deliverable, or association and then click on its :code:`update` or :code:`delete` button.
-
-
-Notes on stakeholders-docker
-============================
-
-stakeholders-docker does not enforce constraints on the uniqueness of stakeholders, deliverables, or associations.  This is to avoid unnecessary complexity in the code.
-
-
-Testing stakeholders-docker
-===========================
-
-To execute tests that do not require a web browser, run the following command from your shell.
-
-.. code-block:: console
-
-   [user@host stakeholders-docker]$ docker-compose exec stakeholders pytest -m "not browser" --cov --cov-report=term-missing
